@@ -5,11 +5,17 @@
   <meta charset="UTF-8" />
   <link href="css/normalize.css" type="text/css" rel="stylesheet" />
   <link href="css/nav.css" type="text/css" rel="stylesheet" />
+  <link href="css/header.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
 
   <div class="wrapper">
+    <header class="header">
+      <h1>What The Flebox?</h1>
+    </header>
+
     <nav class="flex-nav">
+      <a href="#" class="js-toggle-nav"><i class="fas fa-bars"></i> Menu</a>
       <ul>
         <li><a href="#">Item 01</a></li>
         <li><a href="#">Item 02</a></li>
@@ -31,6 +37,26 @@
         </li>
       </ul>
     </nav>
+
+    <section class="hero">
+      <img src="http://lorempixel.com/760/430/abstract" alt="big hero image" />
+    </section>
+
+    <section class="details">
+      <p>A simple experiment to practise using FlexBox.</p>
+    </section>
+
+    <section class="signup">
+      <form action="" class="signup__form">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Email Address">
+        <input type="submit" value="Sign up">
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; Experiments with FlexBox</p>
+    </footer>
   </div>
 
   <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>

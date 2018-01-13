@@ -7,10 +7,15 @@ body {
   margin: 0;
   padding: 0;
   background: #eee;
+  color: #222;
   font-family: Helvetica, serif;
   font-size: 16px;
   font-size: 300;
   line-height: 1.3em;
+}
+
+header {
+  line-height: 1;
 }
 
 ul {
@@ -19,14 +24,16 @@ ul {
   margin: 0;
 }
 
+p {
+  margin: 0;
+}
+
 nav {
   margin: 0 auto;
 }
 
 nav ul {
-  border: 1px solid #ccc;
-  max-width: 800px;
-  margin: 50px auto;
+  border: 1px solid #ddd;
 }
 
 nav li {
@@ -48,6 +55,26 @@ nav a:hover {
   color: #555;
 }
 
+section,
+footer {
+  background: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+button, input {
+  padding: 10px;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
 
 /* Flex styles */
 
