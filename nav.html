@@ -15,7 +15,16 @@
     </header>
 
     <nav class="flex-nav">
-      <a href="#" class="js-toggle-nav"><i class="fas fa-bars"></i> Menu</a>
+      <a href="#" class="flex-nav__toggle js-toggle-nav">
+        <span class="flex-nav__menu">
+          <i class="fas fa-bars"></i> Menu
+        </span>
+
+        <span class="flex-nav__close">
+          <i class="fas fa-times"></i> Close
+        </span>
+      </a>
+
       <ul>
         <li><a href="#">Item 01</a></li>
         <li><a href="#">Item 02</a></li>
@@ -60,5 +69,14 @@
   </div>
 
   <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+  <script>
+    (function() {
+      var menu = document.querySelector('.flex-nav');
+      var menuToggle = document.querySelector('.js-toggle-nav');
+      menuToggle.addEventListener('click', function() {
+        menu.classList.toggle('is-on');
+      });
+    })();
+  </script>
 </body>
 </html>
